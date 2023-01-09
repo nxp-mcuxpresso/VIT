@@ -1,0 +1,26 @@
+NXP Software Content Register
+
+Release Name : VIT_v4.7.5
+Description: FusionF1 Voice Intelligent Technology library
+Version: 4.7.5
+
+Outgoing License : LA_OPT_NXP_Software_License - Additional Distribution License granted, license in Section 2.3 applies
+License file : LICENSE.txt
+Author: NXP - VATEC
+Format: Precompiled libraries, header files
+
+Name: dsp_nn
+Version: 2.2.0
+Outgoing License: Cadence Design Systems License
+License File: CADENCE_LICENSE.txt
+Format: object code
+Description: DSP Neural Networks Framework based on Xtensa Neural Networks Library from Cadence Design
+Origin: Cadence Design Systems, Inc. & NXP
+
+Name: naturedsp                                   
+Version: 4.0.0                                    
+Outgoing License: LA_OPT_NXP_Software_License 
+License File: LICENSE.txt     
+Format: object code                               
+Description: Digital Signal Processing for Xtensa Fusion Audio Engines                                
+Origin: Cadence Design Systems (Proprietary)  
