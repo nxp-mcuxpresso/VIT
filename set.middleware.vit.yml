@@ -1,0 +1,698 @@
+---
+middleware.vit.hifi4_models:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+    files:
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_en.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_cn.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_de.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_es.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_fr.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_it.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_ja.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_ko.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/VIT_Model_tr.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/middleware_vit_hifi4_models.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology HiFi4 models
+    type: middleware
+    version: 4.8.1
+    user_visible: never
+    full_name: middleware vit hifi4 models
+    taxonomy:
+      csub: hifi4
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit hifi4 models
+    vendor: NXP
+  meta-name: middleware.vit.hifi4_models
+  cmake_module_name: middleware_vit_hifi4_models
+middleware.vit.fusionf1_models:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+    files:
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_en.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_cn.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_de.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_es.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_fr.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_it.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_ja.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_ko.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/VIT_Model_tr.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/middleware_vit_fusionf1_models.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology FusionF1 models
+    type: middleware
+    version: 4.8.1
+    user_visible: never
+    full_name: middleware vit fusionf1 models
+    taxonomy:
+      csub: fusionf1
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit fusionf1 models
+    vendor: NXP
+  meta-name: middleware.vit.fusionf1_models
+  cmake_module_name: middleware_vit_fusionf1_models
+set.middleware.vit:
+  section-type: set
+  belong_to: set.middleware.vit
+  section_info:
+    fixed_id: nxp_voice_intelligent_technology
+    version: 4.8.1
+    display_name: Voice intelligent technology library
+    description: Voice Intelligent Technology (VIT) Library provides wake word and
+      voice command engine for voice control
+    set_location:
+      repo_base_path: middleware/vit
+    type: middleware
+    vendor: NXP
+    product:
+      scr:
+      - scr.middleware.vit
+      kex_package:
+        kex_web_ui:
+          ui_control: true
+          ui_release_specific: true
+          ui_control_default: true
+          ui_category: Middleware
+      cmsis_pack:
+        vendor: NXP
+        supported: false
+    component_taxonomy:
+      vit:
+        cclass: Audio
+        cgroup: Voice
+  dependency:
+    anyOf:
+    - allOf:
+      - board:
+        - evkmimxrt1040
+        - evkbimxrt1050
+        - evkmimxrt1060
+        - evkbmimxrt1060
+        - evkmimxrt1064
+        - evkmimxrt1160
+        - evkmimxrt1170
+        - evkbmimxrt1170
+        - lpcxpresso55s69
+      - set.CMSIS_DSP_Lib
+      - set.middleware.maestro_framework
+    - allOf:
+      - board:
+        - evkmimxrt685
+        - mimxrt685audevk
+        - evkmimxrt595
+      - set.middleware.dsp_nn
+      - set.middleware.dsp_audio_streamer
+scr.middleware.vit:
+  belong_to: set.middleware.vit
+  section-type: scr
+  contents:
+    Name: VIT_v4.8.1
+    Version: 4.8.1
+    license:
+    - license.EULA
+    Format: Precompiled libraries, header files, example application
+    Description: Voice Intelligent Technology library
+    Location: middleware/vit
+    Origin: NXP (Proprietary)
+middleware.vit.hifi4:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+    - repo_relative_path: HIFI4/Lib/Inc
+      project_relative_path: HIFI4/Lib/Inc
+      package_relative_path: HIFI4/Lib/Inc
+    files:
+    - source: middleware/vit/HIFI4/Lib/VIT.h
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/Inc/PL_memoryRegion.h
+      repo_relative_path: HIFI4/Lib/Inc
+      project_relative_path: HIFI4/Lib/Inc
+      package_relative_path: HIFI4/Lib/Inc
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/Inc/PL_platformTypes_HIFI4_FUSIONF1.h
+      repo_relative_path: HIFI4/Lib/Inc
+      project_relative_path: HIFI4/Lib/Inc
+      package_relative_path: HIFI4/Lib/Inc
+      type: c_include
+    - source: middleware/vit/HIFI4/Lib/libVIT_HIFI4_v04_08_01.a
+      toolchains: xcc
+      attribute: extra-libraries
+      repo_relative_path: HIFI4/Lib
+      project_relative_path: HIFI4/Lib
+      package_relative_path: HIFI4/Lib
+      type: lib
+    - source: middleware/vit/HIFI4/Doc/VITIUG.pdf
+      exclude: true
+      repo_relative_path: HIFI4/Doc
+      project_relative_path: HIFI4/Doc
+      package_relative_path: HIFI4/Doc
+      type: doc
+    - source: middleware/vit/HIFI4/ExApp/VIT_ExApp.c
+      exclude: true
+      repo_relative_path: HIFI4/ExApp
+      project_relative_path: HIFI4/ExApp
+      package_relative_path: HIFI4/ExApp
+      type: src
+    - source: middleware/vit/HIFI4/ExApp/AFE_VoiceSeeker.h
+      exclude: true
+      repo_relative_path: HIFI4/ExApp
+      project_relative_path: HIFI4/ExApp
+      package_relative_path: HIFI4/ExApp
+      type: c_include
+    - source: middleware/vit/HIFI4/LICENSE.txt
+      exclude: true
+      repo_relative_path: HIFI4
+      project_relative_path: HIFI4
+      package_relative_path: HIFI4
+      type: doc
+    - source: middleware/vit/HIFI4/ReleaseNotes.txt
+      exclude: true
+      repo_relative_path: HIFI4
+      project_relative_path: HIFI4
+      package_relative_path: HIFI4
+      type: doc
+    - source: middleware/vit/middleware_vit_hifi4.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology library
+    type: middleware
+    version: 4.8.1
+    user_visible: always
+    full_name: middleware vit
+    taxonomy:
+      csub: hifi4
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit
+    vendor: NXP
+  dependency:
+    allOf:
+    - middleware.vit.hifi4_models
+    - board:
+      - evkmimxrt685
+      - mimxrt685audevk
+  meta-name: middleware.vit.hifi4
+  cmake_module_name: middleware_vit_hifi4
+middleware.vit.fusionf1:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+    - repo_relative_path: FusionF1/Lib/Inc
+      project_relative_path: FusionF1/Lib/Inc
+      package_relative_path: FusionF1/Lib/Inc
+    files:
+    - source: middleware/vit/FusionF1/Lib/VIT.h
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/Inc/PL_memoryRegion.h
+      repo_relative_path: FusionF1/Lib/Inc
+      project_relative_path: FusionF1/Lib/Inc
+      package_relative_path: FusionF1/Lib/Inc
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/Inc/PL_platformTypes_HIFI4_FUSIONF1.h
+      repo_relative_path: FusionF1/Lib/Inc
+      project_relative_path: FusionF1/Lib/Inc
+      package_relative_path: FusionF1/Lib/Inc
+      type: c_include
+    - source: middleware/vit/FusionF1/Lib/libVIT_Fusion_F1_v04_08_01.a
+      toolchains: xcc
+      attribute: extra-libraries
+      repo_relative_path: FusionF1/Lib
+      project_relative_path: FusionF1/Lib
+      package_relative_path: FusionF1/Lib
+      type: lib
+    - source: middleware/vit/FusionF1/Doc/VITIUG.pdf
+      exclude: true
+      repo_relative_path: FusionF1/Doc
+      project_relative_path: FusionF1/Doc
+      package_relative_path: FusionF1/Doc
+      type: doc
+    - source: middleware/vit/FusionF1/ExApp/VIT_ExApp.c
+      exclude: true
+      repo_relative_path: FusionF1/ExApp
+      project_relative_path: FusionF1/ExApp
+      package_relative_path: FusionF1/ExApp
+      type: src
+    - source: middleware/vit/FusionF1/ExApp/AFE_VoiceSeeker.h
+      exclude: true
+      repo_relative_path: FusionF1/ExApp
+      project_relative_path: FusionF1/ExApp
+      package_relative_path: FusionF1/ExApp
+      type: c_include
+    - source: middleware/vit/FusionF1/LICENSE.txt
+      exclude: true
+      repo_relative_path: FusionF1
+      project_relative_path: FusionF1
+      package_relative_path: FusionF1
+      type: doc
+    - source: middleware/vit/FusionF1/ReleaseNotes.txt
+      exclude: true
+      repo_relative_path: FusionF1
+      project_relative_path: FusionF1
+      package_relative_path: FusionF1
+      type: doc
+    - source: middleware/vit/middleware_vit_fusionf1.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology library
+    type: middleware
+    version: 4.8.1
+    user_visible: always
+    full_name: middleware vit
+    taxonomy:
+      csub: fusionf1
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit
+    vendor: NXP
+  dependency:
+    allOf:
+    - middleware.vit.fusionf1_models
+    - board:
+      - evkmimxrt595
+  meta-name: middleware.vit.fusionf1
+  cmake_module_name: middleware_vit_fusionf1
+middleware.vit.cm7:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: CortexM7/Lib
+      toolchains: mcux
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+    - repo_relative_path: CortexM7/Lib/Inc
+      toolchains: mcux
+      project_relative_path: CortexM7/Lib/Inc
+      package_relative_path: CortexM7/Lib/Inc
+    files:
+    - source: middleware/vit/CortexM7/Lib/VIT.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_cn.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_de.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_en.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_es.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_fr.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_it.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_ja.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_ko.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/VIT_Model_tr.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/Inc/PL_memoryRegion.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib/Inc
+      project_relative_path: CortexM7/Lib/Inc
+      package_relative_path: CortexM7/Lib/Inc
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/Inc/PL_platformTypes_CortexM.h
+      toolchains: mcux
+      repo_relative_path: CortexM7/Lib/Inc
+      project_relative_path: CortexM7/Lib/Inc
+      package_relative_path: CortexM7/Lib/Inc
+      type: c_include
+    - source: middleware/vit/CortexM7/Lib/libVIT_CM7_v04_08_01.a
+      toolchains: mcux
+      attribute: extra-libraries
+      repo_relative_path: CortexM7/Lib
+      project_relative_path: CortexM7/Lib
+      package_relative_path: CortexM7/Lib
+      type: lib
+    - source: middleware/vit/CortexM7/Doc/VITIUG.pdf
+      exclude: true
+      repo_relative_path: CortexM7/Doc
+      project_relative_path: CortexM7/Doc
+      package_relative_path: CortexM7/Doc
+      type: doc
+    - source: middleware/vit/CortexM7/ExApp/VIT_ExApp.c
+      exclude: true
+      repo_relative_path: CortexM7/ExApp
+      project_relative_path: CortexM7/ExApp
+      package_relative_path: CortexM7/ExApp
+      type: src
+    - source: middleware/vit/CortexM7/ExApp/AFE_VoiceSeeker.h
+      exclude: true
+      repo_relative_path: CortexM7/ExApp
+      project_relative_path: CortexM7/ExApp
+      package_relative_path: CortexM7/ExApp
+      type: c_include
+    - source: middleware/vit/CortexM7/LICENSE.txt
+      exclude: true
+      repo_relative_path: CortexM7
+      project_relative_path: CortexM7
+      package_relative_path: CortexM7
+      type: doc
+    - source: middleware/vit/CortexM7/ReleaseNotes.txt
+      exclude: true
+      repo_relative_path: CortexM7
+      project_relative_path: CortexM7
+      package_relative_path: CortexM7
+      type: doc
+    - source: middleware/vit/middleware_vit_cm7.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology library for Cortex M7
+    type: middleware
+    version: 4.8.1
+    user_visible: always
+    full_name: middleware vit cm7
+    taxonomy:
+      csub: cm7
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit
+    vendor: NXP
+  dependency:
+    allOf:
+    - board:
+      - evkmimxrt1040
+      - evkbimxrt1050
+      - evkmimxrt1060
+      - evkbmimxrt1060
+      - evkmimxrt1064
+      - evkmimxrt1160
+      - evkmimxrt1170
+      - evkbmimxrt1170
+  meta-name: middleware.vit.cm7
+  cmake_module_name: middleware_vit_cm7
+middleware.vit.cm33:
+  section-type: component
+  contents:
+    repo_base_path: middleware/vit
+    project_base_path: vit
+    cc-include:
+    - repo_relative_path: CortexM33-LPC55S69/Lib
+      toolchains: mcux
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+    - repo_relative_path: CortexM33-LPC55S69/Lib/Inc
+      toolchains: mcux
+      project_relative_path: CortexM33-LPC55S69/Lib/Inc
+      package_relative_path: CortexM33-LPC55S69/Lib/Inc
+    files:
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_cn.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_de.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_en.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_es.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_fr.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_it.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_ja.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_ko.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/VIT_Model_tr.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/Inc/PL_memoryRegion.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib/Inc
+      project_relative_path: CortexM33-LPC55S69/Lib/Inc
+      package_relative_path: CortexM33-LPC55S69/Lib/Inc
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/Inc/PL_platformTypes_CortexM.h
+      toolchains: mcux
+      repo_relative_path: CortexM33-LPC55S69/Lib/Inc
+      project_relative_path: CortexM33-LPC55S69/Lib/Inc
+      package_relative_path: CortexM33-LPC55S69/Lib/Inc
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/Lib/libVIT_CM33_LPC55S69_v04_08_01.a
+      toolchains: mcux
+      attribute: extra-libraries
+      repo_relative_path: CortexM33-LPC55S69/Lib
+      project_relative_path: CortexM33-LPC55S69/Lib
+      package_relative_path: CortexM33-LPC55S69/Lib
+      type: lib
+    - source: middleware/vit/CortexM33-LPC55S69/Doc/VITIUG.pdf
+      exclude: true
+      repo_relative_path: CortexM33-LPC55S69/Doc
+      project_relative_path: CortexM33-LPC55S69/Doc
+      package_relative_path: CortexM33-LPC55S69/Doc
+      type: doc
+    - source: middleware/vit/CortexM33-LPC55S69/ExApp/VIT_ExApp.c
+      exclude: true
+      repo_relative_path: CortexM33-LPC55S69/ExApp
+      project_relative_path: CortexM33-LPC55S69/ExApp
+      package_relative_path: CortexM33-LPC55S69/ExApp
+      type: src
+    - source: middleware/vit/CortexM33-LPC55S69/ExApp/AFE_VoiceSeeker.h
+      exclude: true
+      repo_relative_path: CortexM33-LPC55S69/ExApp
+      project_relative_path: CortexM33-LPC55S69/ExApp
+      package_relative_path: CortexM33-LPC55S69/ExApp
+      type: c_include
+    - source: middleware/vit/CortexM33-LPC55S69/LICENSE.txt
+      exclude: true
+      repo_relative_path: CortexM33-LPC55S69
+      project_relative_path: CortexM33-LPC55S69
+      package_relative_path: CortexM33-LPC55S69
+      type: doc
+    - source: middleware/vit/CortexM33-LPC55S69/ReleaseNotes.txt
+      exclude: true
+      repo_relative_path: CortexM33-LPC55S69
+      project_relative_path: CortexM33-LPC55S69
+      package_relative_path: CortexM33-LPC55S69
+      type: doc
+    - source: middleware/vit/middleware_vit_cm33.cmake
+      type: workspace
+      toolchains: armgcc
+      hidden: true
+    package_base_path: middleware/vit
+  belong_to: set.middleware.vit
+  section_info:
+    description: Voice intelligent technology library for Cortex M7
+    type: middleware
+    version: 4.8.1
+    user_visible: always
+    full_name: middleware vit cm33
+    taxonomy:
+      csub: cm33
+      cclass: Audio
+      cgroup: Voice
+    display_name: vit
+    vendor: NXP
+  dependency:
+    allOf:
+    - board:
+      - lpcxpresso55s69
+  meta-name: middleware.vit.cm33
+  cmake_module_name: middleware_vit_cm33
