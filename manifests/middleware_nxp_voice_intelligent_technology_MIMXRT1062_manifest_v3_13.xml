@@ -7,7 +7,7 @@
     <definition extID="armgcc"/>
     <definition extID="mcuxpresso"/>
   </externalDefinitions>
-  <ksdk id="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT1062_manifest_v3_13" name="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT1062_manifest_v3_13" version="2.14.0"/>
+  <ksdk id="MCUXpressoSDK2141_middleware_nxp_voice_intelligent_technology_MIMXRT1062_manifest_v3_13" name="MCUXpressoSDK2141_middleware_nxp_voice_intelligent_technology_MIMXRT1062_manifest_v3_13" version="2.14.1" revision="Provided by Script"/>
   <components>
     <component id="middleware.vit.hifi4_models.MIMXRT1062" name="vit hifi4 models" brief="Voice intelligent technology HiFi4 models" version="4.8.1" full_name="middleware vit hifi4 models" devices="MIMXRT1062xxxxA MIMXRT1062xxxxB" category="Audio/Voice" user_visible="false" type="middleware" package_base_path="../middleware/vit" project_base_path="vit">
       <source relative_path="../../HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include">
