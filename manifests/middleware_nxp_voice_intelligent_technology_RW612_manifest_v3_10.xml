@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_middleware_nxp_voice_intelligent_technology_RW612_manifest_v3_10" name="Voice intelligent technology library" brief="Voice Intelligent Technology (VIT) Library provides wake word and voice command engine for voice control" format_version="3.10" api_version="2.0.0" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.10.xsd">
+
+  <externalDefinitions>
+    <definition extID="RW612"/>
+    <definition extID="mcuxpresso"/>
+    <definition extID="armgcc"/>
+  </externalDefinitions>
+  <ksdk id="MCUXpressoSDK2133_middleware_nxp_voice_intelligent_technology_RW612_manifest_v3_10" name="MCUXpressoSDK2133_middleware_nxp_voice_intelligent_technology_RW612_manifest_v3_10" version="2.13.3" revision="2.13.3"/>
+  <components>
+    <component id="middleware.vit.cm33-rw61x.RW612" name="vit" brief="Voice intelligent technology library for Cortex M33-RW61x" version="4.9.0" full_name="middleware vit cm33-rw61x" devices="RW612" category="Audio/Voice intelligent technology library" user_visible="true" type="middleware" package_base_path=".././" project_base_path="vit">
+      <source toolchain="mcuxpresso" relative_path="./CortexM33-RW61x/Lib" project_relative_path="CortexM33-RW61x/Lib" type="c_include">
+        <files mask="VIT.h"/>
+        <files mask="VIT_Model_cn.h"/>
+        <files mask="VIT_Model_de.h"/>
+        <files mask="VIT_Model_en.h"/>
+        <files mask="VIT_Model_es.h"/>
+        <files mask="VIT_Model_fr.h"/>
+        <files mask="VIT_Model_it.h"/>
+        <files mask="VIT_Model_ja.h"/>
+        <files mask="VIT_Model_ko.h"/>
+        <files mask="VIT_Model_tr.h"/>
+      </source>
+      <source toolchain="mcuxpresso" relative_path="./CortexM33-RW61x/Lib/Inc" project_relative_path="CortexM33-RW61x/Lib/Inc" type="c_include">
+        <files mask="PL_memoryRegion.h"/>
+        <files mask="PL_platformTypes_CortexM.h"/>
+      </source>
+      <source toolchain="mcuxpresso" relative_path="./CortexM33-RW61x/Lib" project_relative_path="CortexM33-RW61x/Lib" type="lib">
+        <files mask="libVIT_CM33_RW61x_v04_09_00.a"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM33-RW61x/Doc" project_relative_path="CortexM33-RW61x/Doc" type="doc">
+        <files mask="VITIUG.pdf"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM33-RW61x/ExApp" project_relative_path="CortexM33-RW61x/ExApp" type="src">
+        <files mask="VIT_ExApp.c"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM33-RW61x/ExApp" project_relative_path="CortexM33-RW61x/ExApp" type="c_include">
+        <files mask="AFE_VoiceSeeker.h"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM33-RW61x" project_relative_path="CortexM33-RW61x" type="doc">
+        <files mask="LICENSE.txt"/>
+        <files mask="ReleaseNotes.txt"/>
+      </source>
+      <source toolchain="armgcc" relative_path="./" project_relative_path="." type="workspace">
+        <files mask="middleware_vit_cm33-rw61x_RW612.cmake" hidden="true"/>
+      </source>
+      <include_paths>
+        <include_path relative_path="./CortexM33-RW61x/Lib" project_relative_path="CortexM33-RW61x/Lib" toolchain="mcuxpresso" type="c_include"/>
+        <include_path relative_path="./CortexM33-RW61x/Lib/Inc" project_relative_path="CortexM33-RW61x/Lib/Inc" toolchain="mcuxpresso" type="c_include"/>
+      </include_paths>
+    </component>
+    <component id="middleware.vit.template.RW612" name="vit_template" brief="vit template" version="4.9.0" full_name="vit template configuration" devices="RW612" user_visible="false" type="project_template" package_base_path=".././" project_base_path="vit">
+      <include_paths>
+        <include_path relative_path="./RT1060_CortexM7/Lib" project_relative_path="RT1060_CortexM7/Lib" type="c_include"/>
+        <include_path relative_path="./RT1060_CortexM7/Lib/Inc" project_relative_path="RT1060_CortexM7/Lib/Inc" type="c_include"/>
+      </include_paths>
+    </component>
+  </components>
+</ksdk:manifest>
