@@ -42,7 +42,7 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
 if(CONFIG_TOOLCHAIN STREQUAL xcc)
   target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
     -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./HIFI4/Lib/libVIT_HIFI4_v04_08_01.a
+      ${CMAKE_CURRENT_LIST_DIR}/./HIFI4/Lib/libVIT_HIFI4_v04_09_00.a
       -Wl,--end-group
   )
 endif()
@@ -71,7 +71,7 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
 if(CONFIG_TOOLCHAIN STREQUAL xcc)
   target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
     -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./FusionF1/Lib/libVIT_Fusion_F1_v04_08_01.a
+      ${CMAKE_CURRENT_LIST_DIR}/./FusionF1/Lib/libVIT_Fusion_F1_v04_09_00.a
       -Wl,--end-group
   )
 endif()
@@ -90,7 +90,7 @@ if (CONFIG_USE_middleware_vit_cm7)
 
 message("middleware_vit_cm7 component is included from ${CMAKE_CURRENT_LIST_FILE}.")
 
-if((CONFIG_BOARD STREQUAL evkmimxrt1040 OR CONFIG_BOARD STREQUAL evkbimxrt1050 OR CONFIG_BOARD STREQUAL evkmimxrt1060 OR CONFIG_BOARD STREQUAL evkbmimxrt1060 OR CONFIG_BOARD STREQUAL evkmimxrt1064 OR CONFIG_BOARD STREQUAL evkmimxrt1160 OR CONFIG_BOARD STREQUAL evkmimxrt1170 OR CONFIG_BOARD STREQUAL evkbmimxrt1170))
+if((CONFIG_BOARD STREQUAL evkmimxrt1040 OR CONFIG_BOARD STREQUAL evkbimxrt1050 OR CONFIG_BOARD STREQUAL evkmimxrt1060 OR CONFIG_BOARD STREQUAL evkbmimxrt1060 OR CONFIG_BOARD STREQUAL evkcmimxrt1060 OR CONFIG_BOARD STREQUAL evkmimxrt1064 OR CONFIG_BOARD STREQUAL evkmimxrt1160 OR CONFIG_BOARD STREQUAL evkmimxrt1170 OR CONFIG_BOARD STREQUAL evkbmimxrt1170))
 
 if(CONFIG_TOOLCHAIN STREQUAL mcux)
 target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
@@ -102,7 +102,7 @@ endif()
 if(CONFIG_TOOLCHAIN STREQUAL mcux)
   target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
     -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./CortexM7/Lib/libVIT_CM7_v04_08_01.a
+      ${CMAKE_CURRENT_LIST_DIR}/./CortexM7/Lib/libVIT_CM7_v04_09_00.a
       -Wl,--end-group
   )
 endif()
@@ -133,7 +133,7 @@ endif()
 if(CONFIG_TOOLCHAIN STREQUAL mcux)
   target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
     -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./CortexM33-LPC55S69/Lib/libVIT_CM33_LPC55S69_v04_08_01.a
+      ${CMAKE_CURRENT_LIST_DIR}/./CortexM33-LPC55S69/Lib/libVIT_CM33_LPC55S69_v04_09_00.a
       -Wl,--end-group
   )
 endif()

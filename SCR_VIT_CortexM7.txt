@@ -1,13 +1,26 @@
 NXP Software Content Register
 
-Release Name : VIT_v4.7.5
-Description: Cortex-M7 Voice Intelligent Technology library
-Version: 4.7.5
+Release Name : VIT_v4.9.0
+Description: Cortex-M7 Voice Intelligent Technology library : VIT Wakeword and Voice Command
+Version: 4.9.0
 
-Outgoing License : LA_OPT_NXP_Software_License - Additional Distribution License granted, license in Section 2.3 applies
+#### VIT package #######
+Outgoing License : LA_OPT_NXP_Software_License v49 September 2023 - Additional distribution license granted - Section 2.3 applies
 License file : LICENSE.txt
 Author: NXP - VATEC
-Format: Precompiled libraries, header files
+Format: VIT package
+
+
+#### Package content #######
+Outgoing License : LA_OPT_NXP_Software_License v49 September 2023 - Additional distribution license granted - Section 2.3 applies
+License file : LICENSE.txt
+Author: NXP - VATEC
+Format: Precompiled libraries
+
+Outgoing License : BSD-3
+License file : COPYING-BSD3.txt
+Author: NXP - VATEC
+Format: header files, application files
 
 Name: CMSIS
 Version: 5.6.0
@@ -20,3 +33,4 @@ based on Arm Cortex processors, distributed by
 ARM. cores
 Origin: ARM (Apache-2.0)
 https://github.com/ARM-software/CMSIS_5/releases/tag/5.6.0
+

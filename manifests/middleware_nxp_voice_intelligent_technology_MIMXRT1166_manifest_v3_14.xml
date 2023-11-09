@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_middleware_nxp_voice_intelligent_technology_MIMXRT1166_manifest_v3_14" name="Voice intelligent technology library" brief="Voice Intelligent Technology (VIT) Library provides wake word and voice command engine for voice control" format_version="3.14" api_version="2.0.0" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.14.xsd">
+
+  <externalDefinitions>
+    <definition extID="MIMXRT1166xxxxx"/>
+    <definition extID="armgcc"/>
+    <definition extID="evkmimxrt1160"/>
+    <definition extID="mcuxpresso"/>
+  </externalDefinitions>
+  <ksdk id="MCUXpressoSDK2150_middleware_nxp_voice_intelligent_technology_MIMXRT1166_manifest_v3_14" name="MCUXpressoSDK2150_middleware_nxp_voice_intelligent_technology_MIMXRT1166_manifest_v3_14" version="2.15.0" revision="2.15.0"/>
+  <components>
+    <component id="middleware.vit.hifi4_models.MIMXRT1166" name="vit hifi4 models" brief="Voice intelligent technology HiFi4 models" version="4.8.1" full_name="middleware vit hifi4 models" category="Voice/Voice Command" user_visible="false" type="middleware" package_base_path=".././" project_base_path="vit">
+      <dependencies>
+        <device_dependency value="MIMXRT1166xxxxx"/>
+      </dependencies>
+      <source relative_path="./HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include">
+        <files mask="VIT_Model_en.h"/>
+        <files mask="VIT_Model_cn.h"/>
+        <files mask="VIT_Model_de.h"/>
+        <files mask="VIT_Model_es.h"/>
+        <files mask="VIT_Model_fr.h"/>
+        <files mask="VIT_Model_it.h"/>
+        <files mask="VIT_Model_ja.h"/>
+        <files mask="VIT_Model_ko.h"/>
+        <files mask="VIT_Model_tr.h"/>
+      </source>
+      <source toolchain="armgcc" relative_path="./" type="workspace">
+        <files mask="middleware_vit_hifi4_models.cmake" hidden="true"/>
+      </source>
+      <include_paths>
+        <include_path relative_path="./HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include"/>
+      </include_paths>
+    </component>
+    <component id="middleware.vit.fusionf1_models.MIMXRT1166" name="vit fusionf1 models" brief="Voice intelligent technology FusionF1 models" version="4.8.1" full_name="middleware vit fusionf1 models" category="Voice/Voice Command" user_visible="false" type="middleware" package_base_path=".././" project_base_path="vit">
+      <dependencies>
+        <device_dependency value="MIMXRT1166xxxxx"/>
+      </dependencies>
+      <source relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include">
+        <files mask="VIT_Model_en.h"/>
+        <files mask="VIT_Model_cn.h"/>
+        <files mask="VIT_Model_de.h"/>
+        <files mask="VIT_Model_es.h"/>
+        <files mask="VIT_Model_fr.h"/>
+        <files mask="VIT_Model_it.h"/>
+        <files mask="VIT_Model_ja.h"/>
+        <files mask="VIT_Model_ko.h"/>
+        <files mask="VIT_Model_tr.h"/>
+      </source>
+      <source toolchain="armgcc" relative_path="./" type="workspace">
+        <files mask="middleware_vit_fusionf1_models.cmake" hidden="true"/>
+      </source>
+      <include_paths>
+        <include_path relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include"/>
+      </include_paths>
+    </component>
+    <component id="middleware.vit.cm7.MIMXRT1166" name="vit" brief="Voice intelligent technology library for Cortex M7" version="4.8.1" full_name="middleware vit cm7" category="Voice/Voice Command" user_visible="true" type="middleware" package_base_path=".././" project_base_path="vit">
+      <dependencies>
+        <all>
+          <board_dependency value="evkmimxrt1160"/>
+          <device_dependency value="MIMXRT1166xxxxx"/>
+        </all>
+      </dependencies>
+      <source toolchain="mcuxpresso" relative_path="./CortexM7/Lib" project_relative_path="CortexM7/Lib" type="c_include">
+        <files mask="VIT.h"/>
+        <files mask="VIT_Model_cn.h"/>
+        <files mask="VIT_Model_de.h"/>
+        <files mask="VIT_Model_en.h"/>
+        <files mask="VIT_Model_es.h"/>
+        <files mask="VIT_Model_fr.h"/>
+        <files mask="VIT_Model_it.h"/>
+        <files mask="VIT_Model_ja.h"/>
+        <files mask="VIT_Model_ko.h"/>
+        <files mask="VIT_Model_tr.h"/>
+      </source>
+      <source toolchain="mcuxpresso" relative_path="./CortexM7/Lib/Inc" project_relative_path="CortexM7/Lib/Inc" type="c_include">
+        <files mask="PL_memoryRegion.h"/>
+        <files mask="PL_platformTypes_CortexM.h"/>
+      </source>
+      <source toolchain="mcuxpresso" relative_path="./CortexM7/Lib" project_relative_path="CortexM7/Lib" type="lib">
+        <files mask="libVIT_CM7_v04_09_00.a"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM7/Doc" project_relative_path="CortexM7/Doc" type="doc">
+        <files mask="VITIUG.pdf"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM7/ExApp" project_relative_path="CortexM7/ExApp" type="src">
+        <files mask="VIT_ExApp.c"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM7/ExApp" project_relative_path="CortexM7/ExApp" type="c_include">
+        <files mask="AFE_VoiceSeeker.h"/>
+      </source>
+      <source exclude="true" relative_path="./CortexM7" project_relative_path="CortexM7" type="doc">
+        <files mask="LICENSE.txt"/>
+        <files mask="ReleaseNotes.txt"/>
+      </source>
+      <source toolchain="armgcc" relative_path="./" type="workspace">
+        <files mask="middleware_vit_cm7.cmake" hidden="true"/>
+      </source>
+      <include_paths>
+        <include_path relative_path="./CortexM7/Lib" project_relative_path="CortexM7/Lib" toolchain="mcuxpresso" type="c_include"/>
+        <include_path relative_path="./CortexM7/Lib/Inc" project_relative_path="CortexM7/Lib/Inc" toolchain="mcuxpresso" type="c_include"/>
+      </include_paths>
+    </component>
+  </components>
+</ksdk:manifest>
