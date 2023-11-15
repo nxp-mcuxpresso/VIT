@@ -5,10 +5,10 @@
     <definition extID="MIMXRT595S"/>
     <definition extID="armgcc"/>
   </externalDefinitions>
-  <ksdk id="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT595S_manifest_v3_13" name="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT595S_manifest_v3_13" version="2.14.0"/>
+  <ksdk id="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT595S_manifest_v3_13" name="MCUXpressoSDK2140_middleware_nxp_voice_intelligent_technology_MIMXRT595S_manifest_v3_13" version="2.14.0" revision="2.14.0"/>
   <components>
-    <component id="middleware.vit.hifi4_models.MIMXRT595S" name="vit hifi4 models" brief="Voice intelligent technology HiFi4 models" version="4.8.1" full_name="middleware vit hifi4 models" devices="MIMXRT595S" category="Audio/Voice" user_visible="false" type="middleware" package_base_path="../middleware/vit" project_base_path="vit">
-      <source relative_path="../../HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include">
+    <component id="middleware.vit.hifi4_models.MIMXRT595S" name="vit hifi4 models" brief="Voice intelligent technology HiFi4 models" version="4.8.1" full_name="middleware vit hifi4 models" devices="MIMXRT595S" category="Audio/Voice" user_visible="false" type="middleware" package_base_path=".././" project_base_path="vit">
+      <source relative_path="./HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include">
         <files mask="VIT_Model_en.h"/>
         <files mask="VIT_Model_cn.h"/>
         <files mask="VIT_Model_de.h"/>
@@ -23,11 +23,11 @@
         <files mask="middleware_vit_hifi4_models.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include"/>
+        <include_path relative_path="./HIFI4/Lib" project_relative_path="HIFI4/Lib" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.vit.fusionf1_models.MIMXRT595S" name="vit fusionf1 models" brief="Voice intelligent technology FusionF1 models" version="4.8.1" full_name="middleware vit fusionf1 models" devices="MIMXRT595S" category="Audio/Voice" user_visible="false" type="middleware" package_base_path="../middleware/vit" project_base_path="vit">
-      <source relative_path="../../FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include">
+    <component id="middleware.vit.fusionf1_models.MIMXRT595S" name="vit fusionf1 models" brief="Voice intelligent technology FusionF1 models" version="4.8.1" full_name="middleware vit fusionf1 models" devices="MIMXRT595S" category="Audio/Voice" user_visible="false" type="middleware" package_base_path=".././" project_base_path="vit">
+      <source relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include">
         <files mask="VIT_Model_en.h"/>
         <files mask="VIT_Model_cn.h"/>
         <files mask="VIT_Model_de.h"/>
@@ -42,30 +42,30 @@
         <files mask="middleware_vit_fusionf1_models.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include"/>
+        <include_path relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include"/>
       </include_paths>
     </component>
-    <component id="middleware.vit.fusionf1.MIMXRT595S" name="vit" brief="Voice intelligent technology library" version="4.8.1" full_name="middleware vit" devices="MIMXRT595S" category="Audio/Voice" user_visible="true" type="middleware" package_base_path="../middleware/vit" project_base_path="vit">
+    <component id="middleware.vit.fusionf1.MIMXRT595S" name="vit" brief="Voice intelligent technology library" version="4.8.1" full_name="middleware vit" devices="MIMXRT595S" category="Audio/Voice" user_visible="true" type="middleware" package_base_path=".././" project_base_path="vit">
       <dependencies>
         <component_dependency value="middleware.vit.fusionf1_models.MIMXRT595S"/>
       </dependencies>
-      <source relative_path="../../FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include">
+      <source relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include">
         <files mask="VIT.h"/>
       </source>
-      <source relative_path="../../FusionF1/Lib/Inc" project_relative_path="FusionF1/Lib/Inc" type="c_include">
+      <source relative_path="./FusionF1/Lib/Inc" project_relative_path="FusionF1/Lib/Inc" type="c_include">
         <files mask="PL_memoryRegion.h"/>
         <files mask="PL_platformTypes_HIFI4_FUSIONF1.h"/>
       </source>
-      <source exclude="true" relative_path="../../FusionF1/Doc" project_relative_path="FusionF1/Doc" type="doc">
+      <source exclude="true" relative_path="./FusionF1/Doc" project_relative_path="FusionF1/Doc" type="doc">
         <files mask="VITIUG.pdf"/>
       </source>
-      <source exclude="true" relative_path="../../FusionF1/ExApp" project_relative_path="FusionF1/ExApp" type="src">
+      <source exclude="true" relative_path="./FusionF1/ExApp" project_relative_path="FusionF1/ExApp" type="src">
         <files mask="VIT_ExApp.c"/>
       </source>
-      <source exclude="true" relative_path="../../FusionF1/ExApp" project_relative_path="FusionF1/ExApp" type="c_include">
+      <source exclude="true" relative_path="./FusionF1/ExApp" project_relative_path="FusionF1/ExApp" type="c_include">
         <files mask="AFE_VoiceSeeker.h"/>
       </source>
-      <source exclude="true" relative_path="../../FusionF1" project_relative_path="FusionF1" type="doc">
+      <source exclude="true" relative_path="./FusionF1" project_relative_path="FusionF1" type="doc">
         <files mask="LICENSE.txt"/>
         <files mask="ReleaseNotes.txt"/>
       </source>
@@ -73,8 +73,8 @@
         <files mask="middleware_vit_fusionf1.cmake" hidden="true"/>
       </source>
       <include_paths>
-        <include_path relative_path="../../FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include"/>
-        <include_path relative_path="../../FusionF1/Lib/Inc" project_relative_path="FusionF1/Lib/Inc" type="c_include"/>
+        <include_path relative_path="./FusionF1/Lib" project_relative_path="FusionF1/Lib" type="c_include"/>
+        <include_path relative_path="./FusionF1/Lib/Inc" project_relative_path="FusionF1/Lib/Inc" type="c_include"/>
       </include_paths>
     </component>
   </components>

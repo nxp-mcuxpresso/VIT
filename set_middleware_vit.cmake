@@ -39,14 +39,6 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}/./HIFI4/Lib/Inc
 )
 
-if(CONFIG_TOOLCHAIN STREQUAL xcc)
-  target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
-    -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./HIFI4/Lib/libVIT_HIFI4_v04_08_01.a
-      -Wl,--end-group
-  )
-endif()
-
 else()
 
 message(SEND_ERROR "middleware_vit_hifi4 dependency does not meet, please check ${CMAKE_CURRENT_LIST_FILE}.")
@@ -67,14 +59,6 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}/./FusionF1/Lib
   ${CMAKE_CURRENT_LIST_DIR}/./FusionF1/Lib/Inc
 )
-
-if(CONFIG_TOOLCHAIN STREQUAL xcc)
-  target_link_libraries(${MCUX_SDK_PROJECT_NAME} PRIVATE
-    -Wl,--start-group
-      ${CMAKE_CURRENT_LIST_DIR}/./FusionF1/Lib/libVIT_Fusion_F1_v04_08_01.a
-      -Wl,--end-group
-  )
-endif()
 
 else()
 
