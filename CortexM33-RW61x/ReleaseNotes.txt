@@ -1,0 +1,31 @@
+
+----------------------------------------------------------------------
+REL 04.09.00 - LA_OPT_NXP_Software_License
+----------------------------------------------------------------------
+VIT integrating LP_VAD, WakeWordEngine Text2Model and Voice Command Text2Model features.
+Core supported : Cortex-M33-noDSP
+Platform supported : RW61x
+
+Languages supported by the VIT library: English, Mandarin, Spanish, German, Japanese, Korean, Turkish, Italian, French
+1 model example is provided per language.
+
+See VIT_Model_x.h for the list of wakewords and commands supported by the different models.
+VIT_Model_en.h : English
+VIT_Model_cn.h : Mandarin
+VIT_Model_es.h : Spanish
+VIT_Model_de.h : German
+VIT_Model_ja.h : Japanese
+VIT_Model_ko.h : Korean
+VIT_Model_tr.h : Turkish
+VIT_Model_it.h : Italian
+VIT_Model_fr.h : French
+
+New features :
+
+Main changes :
+    - Memory footprint reduction
+    - Only input frame of 30ms supported
+    - VIT_v4.9.0 lib not backward compatible with previous model versions
+
+        
+Notes : VIT lib is supporting 1 MIC only
